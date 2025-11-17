@@ -3,9 +3,9 @@
 int main() {
     int anno;
     printf("Insert year:\n");
-    scanf("%d", anno);
-    if ((anno % 4 == 0 && anno % 100 == 0) || anno % 400 == 0)
-    printf("Bisestile");
+    scanf("%d", &anno);
+    if ((anno % 4 == 0 && anno % 100 != 0) || anno % 400 == 0)
+    printf("Bisestile\n");
     else
-    printf("Non bisestile");
+    printf("Non bisestile\n");
 }
