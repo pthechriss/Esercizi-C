@@ -3,8 +3,13 @@
 int main()
 {
     int m, a;
+    fine:
     printf("Insert month and year:\n");
     scanf("%d%d", &m, &a);
+    if (m < 1 || m > 12) {
+    printf("Month not recognized, try again\n");
+    goto fine;
+    }
     if (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12)
     {
         printf("31\n");
