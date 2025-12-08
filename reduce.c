@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int main() 
 {
     int n, s, i;
     printf("Inserire un numero:\n");
